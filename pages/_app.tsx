@@ -1,8 +1,15 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import "../styles/globals.css";
+import { AnimatePresence } from "framer-motion";
+import type { AppProps } from "next/app";
+import { Mouse } from "../components/mouse";
+function MyApp({ Component, pageProps, router }: AppProps) {
+  return (
+    <>
+      <AnimatePresence exitBeforeEnter>
+        <Component key={router.route} {...pageProps} />
+      </AnimatePresence>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
