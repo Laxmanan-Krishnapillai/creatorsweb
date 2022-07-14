@@ -17,7 +17,7 @@ const About: NextPage = () => {
       <section className="w-screen flex justify-center flex-col items-center h-screen">
         <motion.h1
           animate={{ opacity: 1 }}
-          className="font-sans font-black text-4xl text-white mb-10 opacity-0"
+          className="font-sans font-black text-4xl text-white mb-10 opacity-0 text-center"
         >
           Shoot us a mail, we don&apos;t mind!
         </motion.h1>
