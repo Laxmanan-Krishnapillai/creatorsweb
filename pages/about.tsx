@@ -7,7 +7,7 @@ const About: NextPage = () => {
   const router = useRouter();
   return (
     <motion.main
-      className={`flex max-w-screen max-h-screen overflow-hidden ${router.query.color}`}
+      className={`flex max-w-screen max-h-screen overflow-hidden bg-red-500`}
     >
       <Head>
         <title>Creators Web - Unikke hjemmesider og webapps</title>
@@ -21,7 +21,7 @@ const About: NextPage = () => {
         >
           Shoot us a mail, we don&apos;t mind!
         </motion.h1>
-        <Link href={{ pathname: "/", query: { color: "bg-slate-900" } }}>
+        <Link href={{ pathname: "/", query: { color: "bg-white" } }}>
           <motion.div className="inline-block relative">
             <motion.a
               initial={{ opacity: 0 }}

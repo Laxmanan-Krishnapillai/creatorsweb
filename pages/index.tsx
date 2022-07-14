@@ -15,19 +15,19 @@ const Home: NextPage = () => {
       <section className="w-screen flex flex-col justify-center items-center h-screen">
         <motion.h1
           animate={{ opacity: 1 }}
-          className="font-sans font-black text-4xl text-slate-900 mb-10 opacity-0"
+          className="font-sans font-black text-4xl text-red-500 mb-10 opacity-0"
         >
-          Hey there, we make great websites!
+          Do you take the red pill?
         </motion.h1>
-        <Link href={{ pathname: "/about", query: { color: "bg-slate-900" } }}>
-          <motion.div className="inline-block relative">
+        <Link href={{ pathname: "/about", query: { color: "bg-red-500" } }}>
+          <motion.div className="inline-block relative mb-10">
             <motion.a
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { delay: 0.5 } }}
               exit={{ opacity: 0 }}
-              className="px-10 py-4 bg-black text-white hover:bg-slate-900 font-bold transition-colors relative z-10 cursor-pointer"
+              className="px-10 py-4 bg-black text-white hover:bg-red-500 font-bold transition-colors relative z-10 cursor-pointer"
             >
-              Contact
+              You never know untill you see
             </motion.a>
             <motion.div
               exit={{
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
                 display: "block",
                 transition: { delay: 1 },
               }}
-              className="w-10 h-10 rounded-full bg-slate-900 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              className="w-10 h-10 rounded-full bg-red-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             />
           </motion.div>
         </Link>
